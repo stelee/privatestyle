@@ -1,0 +1,206 @@
+@import (reference) "elements.less";
+@import (reference) "variables.less";
+/*--------------------------------------------
+RTL Support
+----------------------------------------------*/
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+   float: right;
+}
+.free-ship h3:before{
+   float: right;
+}
+.snap-drawer-left #btn-mobile-toggle:after{
+   right: auto;
+   left: 15px;
+   content: "\f104";
+}
+.snap-drawer-left #menu li li:before{
+   left: auto;
+   right: 0;
+}
+.snap-drawer-left #menu li li{
+   padding-left: 0;
+   padding-right: 15px;
+   border-left: none;
+   border-right: 1px solid #444;
+}
+.breadcrumb li:after{
+   content: "\f0d9";
+   float: left;
+}
+#column-left, #column-right{
+   .box-product img{
+      float: right;
+   }
+}
+.breadcrumb .col-md-3, .breadcrumb .col-md-8{
+   text-align: right;
+}
+.box-product > div, .product-grid > div{
+   margin-right: -5px;
+}
+.buttons .right{
+   float: left;
+}
+.buttons .left{
+   float: right;
+}
+#top-bar .ship li:nth-child(2):before,
+#top-bar .ship li:nth-child(1):before{
+   float: right;
+   margin-left: 5px;
+   margin-right: 0;
+}
+/*footer*/
+#footer .info img{
+   float: right;
+   margin-left: 20px;
+   margin-right: auto;
+}
+#footer .left .info:before{
+   right: auto;
+   left: 0;
+}
+#footer .steps li:before {
+   float: right;
+   margin-left: 10px;
+   margin-right: 0;
+}
+#footer .contact li:before{
+   float: right;
+   margin-right: 0 !important;
+   margin-left: 10px;
+}
+#powered .payment{
+   text-align: left;
+}
+.newsletter{
+   text-align: right;
+}
+.bottom-blocks .thumb{
+   float: right;
+}
+.share{
+   float: right;
+}
+.scrollup{
+   right: auto;
+   left: 50px;
+}
+.box .comments li .avatar, .box .articles li .avatar {
+   float: right;
+   margin-left: 10px;
+}
+@media only screen and (max-width: 991px) {
+   #btn-mobile-toggle:after{
+      right: auto;
+      left: 15px;
+   }
+   #megamenu li.item .btn-expand-menu:before{
+      float: left;
+   }
+   #megamenu li.item .btn-expand-menu {
+      right: auto;
+      left: 0;
+   }
+}
+@media @md {
+   .mainmenu > li{
+      float: right;
+   }
+}
+@media @lg {//1200px
+   #header #logo{
+      text-align: right;
+   }
+   .product-list{
+      .col-md-8{
+         text-align: right;
+      }
+   }
+   #megamenu .subcat li:before{
+      float: right;
+      margin-right: 0;
+      margin-left: 5px;
+   }
+   #megamenu .mainmenu > li > div{
+      img{
+         float: right;
+         margin-right: 0;
+         margin-left: 10px;
+      }
+      .subcat{
+         margin-left: 0 !important;
+      }
+   }
+   .product-filter .display a:before,
+   .product-filter .display span:before{
+      margin-right: 0;
+      margin-left: 5px;
+   }
+   .free-ship h3{
+      float: right;
+   }
+   #header #search input{
+      background-position-x: 10px;
+   }
+   #header #search .kuler-finder-result .list-layout div{
+      text-align: right;
+   }
+   #menu .mainmenu > li .sublevel{
+      left: auto;
+      right: 250px;
+   }
+   #menu .mainmenu > li > div > ul > li:hover > .sublevel,
+   #menu .mainmenu > li > div > ul li.parent:hover > .sublevel{
+      right: 220px;
+   }
+   #footer .left .contact{
+      border-left: none;
+      border-right: 1px solid #333333;
+      margin-right: -1px;
+   }
+   #footer .right {
+      border-left: none;
+      border-right: 1px solid #333333;
+      margin-left: 0;
+      margin-right: -1px;
+   }
+   #footer .left,
+   #footer .left .steps{
+      border-right: none;
+      border-left: 1px solid #333333;
+   }
+   #footer .right .col-lg-12 {
+      width: 500%;
+      margin: 0 0 50px -400%;
+      padding: 0 50px 50px 0;
+      border-bottom: 1px solid #333333;
+   }
+   #footer .left .map:before{
+      right: auto;
+      left: 0;
+   }
+   .newsletter input{
+      margin-left: 0;
+      margin-right: 10px;
+   }
+   .newsletter{
+      text-align: left;
+   }
+   #top-bar .extra{
+      text-align: left;
+   }
+   #top-bar .extra .dropdown-menu{
+      right: 0;
+      left: auto;
+      text-align: right;
+   }
+}
+/* style 2*/
+.style_2{
+   #header #cart .heading #cart-product-total{
+      right: 53%;
+      left: auto;
+   }
+}

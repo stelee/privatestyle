@@ -1,0 +1,18 @@
+---------- Date: 2014-08-12 07:56:07 ~ IP : 58.187.86.136 ----------
+REQUEST URI : /bowtie/1/?route=module/kbm
+MOD DETAILS:
+   modFile   : /home/kladmin/public_html/demo.kulerthemes/bowtie/1/vqmod/xml/kulerthemes_cp.xml
+   id        : KulerThemes
+   version   : 
+   vqmver    : 
+   author    : kulerthemes.com
+VQModObject::parseMods - Could not resolve path for [catalog/controller/common/ content_bottom.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/controller/common/ column_left.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/controller/common/ column_right.php] (SKIPPED)
+
+File Name    : catalog/controller/module/kuler_cp.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $this->overrideResponse();
+
+----------------------------------------------------------------------
+
+

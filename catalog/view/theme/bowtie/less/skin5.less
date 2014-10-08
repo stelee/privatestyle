@@ -1,0 +1,93 @@
+@import (reference) "elements";
+/*--------------------------------------------
+Skin 5
+----------------------------------------------*/
+.skin5{
+	&.home {
+		#search input{
+			right: 15px;
+		}
+		#top-bar{
+			top: 69px;
+			position: absolute;
+			z-index: 9999;
+			width: 100%;
+			padding: 0;
+			.container{
+				background-color: #fff;
+				border-bottom: 1px solid #EEEEEE;
+			}
+		}
+		#header{
+			position: absolute;
+			z-index: 99;
+			width: 100%;
+			padding: 0;
+			top: 114px;
+			.box-shadow(none);
+			>.container{
+				background-color: #fff;
+				padding: 20px 15px;
+			}
+		}
+	}
+	.product-info h1,
+	.product-list .name a{
+		color: #46A2D9;
+	}
+	.product-list > div:hover{
+		border-color: #46A2D9;
+	}
+	#search {
+		right: 10px;
+		top: 11px;
+	}
+}
+.top-banners.skin_5{
+	background-color:#373737;
+	padding-bottom: 0;
+	h2{
+		color: #ffffff;
+	}
+	.row{
+		margin: 0;
+		.col-md-2{
+			padding: 0;
+		}
+	}
+}
+
+.bottom-banners.skin_5{
+	background: url("../image/bottom_banner_bg.jpg") repeat-y;
+	padding: 100px 0;
+	h3{
+		color: #FFFFFF;
+	}
+	.icon{
+		background-color: transparent;
+		border: 1px solid #FFFFFF;
+		&:hover{
+			background-color: #46A2D9;
+			border-color: #46A2D9;
+			color: #FFFFFF;
+		}
+	}
+}
+.kt-module {
+	background: url("../image/skins/skin5/testi_bg.jpg");
+}
+.alert.skin_5{
+	.col-md-11,label{
+		background-color: #6E8555;
+	}
+	.writer_name{
+		color: #CCCCCC;
+		text-transform: uppercase;
+	}
+}
+@media @md { //1024px
+
+}
+@media @lg { //1200px
+
+}

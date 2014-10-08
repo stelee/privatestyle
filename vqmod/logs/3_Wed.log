@@ -1,0 +1,18 @@
+---------- Date: 2014-10-08 02:15:27 ~ IP : ::1 ----------
+REQUEST URI : /privatestyle/
+MOD DETAILS:
+   modFile   : /Users/stelee/git/privatestyle/vqmod/xml/kulerthemes_cp.xml
+   id        : KulerThemes
+   version   : 
+   vqmver    : 
+   author    : kulerthemes.com
+VQModObject::parseMods - Could not resolve path for [catalog/controller/common/ content_bottom.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/controller/common/ column_left.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/controller/common/ column_right.php] (SKIPPED)
+
+File Name    : catalog/controller/module/kuler_cp.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $this->overrideResponse();
+
+----------------------------------------------------------------------
+
+

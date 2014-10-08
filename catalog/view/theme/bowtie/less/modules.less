@@ -1,0 +1,651 @@
+@import (reference) "elements.less";
+/*--------------------------------------------
+Carousel
+----------------------------------------------*/
+.carousel{
+}
+.jcarousel-skin-opencart{
+	.jcarousel-container {
+		margin: 0 0 70px;
+		overflow: hidden;
+		&:hover{
+			.jcarousel-prev{
+				left: 10px;
+			}
+			.jcarousel-next{
+				right: 10px;
+			}
+		}
+	}
+	.jcarousel-direction-rtl {
+		direction: rtl;
+	}
+	.jcarousel-clip {
+		overflow: hidden;
+		width: 100%;
+	}
+	.jcarousel-clip-horizontal {
+	}
+	.jcarousel-item {
+		text-align: center;
+	}
+	.jcarousel-item-horizontal {
+		margin-left: 0;
+		margin-right: 10px;
+	}
+	.jcarousel-direction-rtl .jcarousel-item-horizontal {
+		margin-left: 10px;
+		margin-right: 0;
+	}
+	.jcarousel-item-placeholder {
+		background: #fff;
+		color: #000;
+	}
+	.jcarousel-prev,.jcarousel-next{
+		position: absolute;
+		top: 30%;
+		cursor: pointer;
+		z-index: 20;
+	}
+	.jcarousel-prev{
+		left: -100px;
+		top: 35%;
+		right: auto;
+		.transi;
+	}
+	.jcarousel-next{
+		right: -100px;
+		top: 35%;
+		.transi;
+	}
+	.jcarousel-prev:before{
+		.kulerfont;
+		content: '\f104';
+		font-size: 25px;
+		color: #fff;
+		width: 32px;
+		height: 32px;
+		display: block;
+		line-height: 32px;
+		text-align: center;
+		right: 33px;
+		.transi;
+	}
+	.jcarousel-next:before{
+		.kulerfont;
+		content: '\f105';
+		font-size: 25px;
+		color: #ffffff;
+		width: 32px;
+		height: 32px;
+		display: block;
+		line-height: 32px;
+		text-align: center;
+		.transi;
+	}
+}
+/*--------------------------------------------
+Kuler Filter
+----------------------------------------------*/
+.kuler-filter{
+	.box{
+		background-color: #eee;
+		padding: 20px;
+	}
+	.buttons{
+		margin-top: 20px;
+	}
+	.ui-slider-horizontal .ui-slider-handle{
+		.rounded(0);
+		width: 10px;
+		background: #444;
+		border: none;
+	}
+	.ui-slider-horizontal .ui-slider-range{
+		background: #aaaaaa;
+		.rounded(0);
+		border: none;
+	}
+	.ui-slider-horizontal{
+		.rounded(0);
+		margin: 0 10px;
+	}
+	select{
+		width: 100%;
+	}
+}
+/*--------------------------------------------
+Kuler Slide
+----------------------------------------------*/
+.kuler-slides{
+	.jcarousel-skin-opencart .jcarousel-container-horizontal{
+		padding: 0;
+	}
+	.box-heading{
+		line-height: 32px;
+		margin-bottom: 50px;
+	}
+	.product-grid .col-lg-3{
+		margin-top: 10px;
+	}
+}
+/*--------------------------------------------
+Kuler Accordion
+----------------------------------------------*/
+.kuler-accordion {
+	margin-bottom: 50px;
+	.item-title {
+		color: #ffffff;
+		cursor: pointer;
+		font-size: 16px;
+		background-color: #aaaaaa;
+		span {
+			display: inline-block;
+			line-height: 48px;
+			padding-left: 15px;
+			padding-right: 15px;
+			user-select: none;
+			-moz-user-select: none;
+			-webkit-user-select: none;
+		}
+		&.selected {
+			background-color: #444444;
+		}
+	}
+	.box-product {
+		background-color: #fff;
+		margin: 0;
+		.clear;
+	}
+	.right{
+		padding-bottom: 15px;
+	}
+	.product-list > div{
+		margin: 0;
+		font-size: 0;
+		padding: 0;
+		&:hover{
+			border-color: transparent;
+		}
+	}
+	.item-content {
+		background-color: #fff;
+	}
+	.product-list .rating{
+		display: inline-block;
+	}
+}
+/* HORIZONTAL */
+.kuler-accordion {
+	.horizontal {
+		border: 0;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		position: relative;
+		box-sizing: content-box;
+		background-color: #fff;
+		-webkit-perspective: 1000;
+		-webkit-backface-visibility: hidden;
+		-webkit-tap-highlight-color: transparent;
+	}
+	.horizontal .item-title,
+	.horizontal .item-content {
+		z-index: 1;
+		overflow: hidden;
+		position: absolute;
+	}
+	.horizontal .item-title {
+		top: 0;
+		left: 0;
+		z-index: 2;
+		text-align: right;
+		border-bottom: 1px solid #ffffff;
+		transform: translateX(-100%) rotate(-90deg);
+		-moz-transform: translateX(-100%) rotate(-90deg);
+		-webkit-transform: translateX(-100%) rotate(-90deg);
+		transform-origin: right top;
+		-moz-transform-origin: right top;
+		-webkit-transform-origin: right top;
+		-webkit-backface-visibility: hidden; /* fixes chrome bug */
+	}
+	.horizontal .item-content {
+		top: -1px;
+		margin: 0;
+		border-top: none;
+		border-left: none;
+	}
+}
+/* IE */
+.kuler-accordion{
+	.horizontal.box-content.ie .item-title,
+	.horizontal.box-content.ie .item-title span {
+		filter: none;
+		-ms-filter: none;
+		-ms-transform: none
+	}
+	.horizontal.box-content.ie7 .item-title {
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3)
+	}
+	.horizontal.box-content.ie8 .item-title {
+		-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)"
+	}
+	.horizontal.box-content.ie9 .item-title {
+		-ms-transform: translateX(-100%) rotate(-90deg);
+		-ms-transform-origin: right top
+	}
+}
+/* VERTICAL */
+.kuler-accordion {
+	.vertical .item-content {
+		overflow: hidden;
+	}
+}
+/*custom */
+.kuler-accordion{
+	.box-product > div:hover a img{
+		.translate(0,0);
+	}
+}
+/*--------------------------------------------
+Kuler Testimonial
+----------------------------------------------*/
+.kt-module{
+	background-color: #65B05B;
+	padding: 80px 0;
+	.device{
+		border: none;
+		width: 900px;
+		height: auto;
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;
+		font-size: 18px;
+		color: #FFFFFF;
+	}
+	.swiper-slide{
+		width: 900px !important;
+		height: auto !important;
+		img{
+			.rounded(100%);
+			margin-bottom: 30px;
+		}
+	}
+	.swiper-wrapper{
+		height: auto !important;
+	}
+	.swiper-horizontal,
+	.swiper-container{
+		width: auto;
+		height: auto;
+	}
+	.swiper-container{
+		padding-bottom: 80px;
+	}
+	.slide-content{
+		font-weight: 500;
+		font-size: 20px;
+	}
+	.writer_name{
+		display: block;
+		margin-top: 15px;
+		font-size: 14px;
+		font-weight: 600;
+	}
+	.swiper-pagination-switch{
+		.box-shadow(none);
+		background: none;
+		border: 2px solid #A1CF9C;
+	}
+	.swiper-active-switch{
+		border-color: #FFFFFF;
+	}
+}
+/*--------------------------------------------
+Kuler Tabs
+----------------------------------------------*/
+.ui-tabs .ui-tabs-panel{
+	padding: 0;
+}
+.kuler-tabs {
+	background: none;
+	border: none;
+	margin-bottom: 3b0px;
+	.clear;
+	.title{
+		text-align: center;
+		margin-bottom: 50px;
+		overflow: hidden;
+		ul{
+			display: inline-block !important;
+			position: relative;
+			overflow: visible !important;
+			&:before{
+				content: "";
+				position: absolute;
+				width: 5000px;
+				height: 1px;
+				background-color: #eee;
+				top: 48%;
+				left: -1020px;
+			}
+			&:after{
+				left: auto;
+				right: -1020px;
+			}
+		}
+	}
+	.ui-tabs-hide{
+		display: none;
+	}
+	.box-heading {
+		position: relative;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 0;
+		background: none;
+		border: none;
+		li {
+			display: inline-block;
+			padding-right: 0;
+			vertical-align: top;
+			font-size: 18px;
+			float: none;
+			border: none;
+			background: none;
+			background-color: #fff;
+			a{
+				color: #aaa;
+				font-weight: 500;
+				font-size: 24px;
+				text-transform: none;
+				float: none;
+				position: relative;
+			}
+			&.ui-state-default{
+				display: none;
+			}
+			&.ui-state-active{
+				display: inline-block;
+				a{
+					color: #444444;
+				}
+			}
+		}
+		.btn-tabs-toggle {
+			top: 0;
+			left: 0;
+			z-index: 1;
+			width: 100%;
+			height: 100%;
+			cursor: pointer;
+			background: none;
+			position: absolute;
+			&:before{
+				display: none;
+			}
+		}
+	}
+	.collapse{
+		.ui-state-default{
+			display: none;
+		}
+	}
+	.expand{
+		li{
+			display: inline-block;
+			z-index: 2;
+		}
+		.ui-state-default{
+			display: inline-block;
+		}
+		.ui-state-active{
+			z-index: 0;
+		}
+	}
+}
+/*--------------------------------------------
+Kuler Contact Form
+----------------------------------------------*/
+.kcf-module{
+	.box{
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	input,
+	textarea{
+		width: 100%;
+		border: none;
+		background-color: #F7F7F7;
+		padding: 15px;
+	}
+	button{
+		background: #000;
+		font-weight: 600;
+		padding: 10px 25px;
+		border: none;
+		text-transform: uppercase;
+		font-size: 13px;
+	}
+	p{
+		margin-bottom: 10px;
+	}
+	.footer-top &{
+		margin: 50px 0;
+	}
+	.box-heading{
+		text-align: left;
+		&:before{
+			display: none;
+		}
+	}
+}
+/*--------------------------------------------
+Kuler Blog Manager
+----------------------------------------------*/
+/*recent article*/
+#content .articles {
+	margin-bottom: 70px;
+	li {
+		text-align: center;
+		.image {
+			overflow: hidden;
+			position: relative;
+			margin-bottom: 15px;
+		}
+		a{
+			display: block;
+			font-size: 18px;
+			font-weight: 500;
+			color: @skin1;
+			&:hover{
+				color:#222;
+			}
+		}
+		img{
+			.transi;
+		}
+		span{
+			color: #666;
+		}
+	}
+	li:hover img {
+		-webkit-transform: scale(2);
+		-o-transform: scale(2);
+		transform: scale(2);
+	}
+}
+.kbm-recent-article{
+	.image:hover{
+		.link{
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+	.link{
+		.absolute-center;
+		background-color: rgba(0, 0, 0, .2);
+		visibility: hidden;
+		opacity: 0;
+		.transi;
+		a{
+			font-size: 42px !important;
+			color: #ffffff !important;
+			top: 42%;
+			position: absolute;
+			left: 45%;
+		}
+	}
+}
+/*related articles*/
+.related-articles {
+	ul{
+		margin: 0;
+		width: auto;
+		li{
+			margin: 0 0 5px 20px;
+			list-style: circle;
+		}
+		a{
+			font-size: 14px !important;
+		}
+	}
+	h4 {
+		font-size: 18px;
+		font-weight: 600;
+		color: #222222;
+	}
+}
+/*sidebar settings*/
+.col-md-4{
+	.articles{
+		li {
+			a{
+				display: block;
+			}
+			p{
+				padding: 0 0 15px;
+				margin: 0;
+				font-size: 13px;
+			}
+		}
+	}
+}
+.article {
+	display: inline-block;
+	vertical-align: top;
+	background-color: #fff;
+	margin-bottom: 30px !important;
+	border-bottom: 1px solid #eee;
+	.read-more {
+		text-align: left;
+		padding: 7px 15px;
+		display: inline-block;
+		clear: both;
+		border: 2px solid #eee;
+		background: none !important;
+		color: #222;
+		margin-bottom: 20px;
+	}
+	.article-image{
+		margin-right: 25px !important;
+	}
+}
+.article-list + .pagination,
+.comment-list + .pagination {
+	border: none;
+	padding: 0;
+}
+.comment-container {
+	padding: 0;
+}
+.comment-stats {
+	padding: 10px 20px;
+	background-color: #EEEEEE;
+	font-weight: 600;
+	font-size: 18px;
+}
+.article-extra-info {
+	font-size: 0;
+	color: #b2b2b2;
+	margin-bottom: 10px;
+	time,a{
+		font-size: 13px;
+		margin-right: 15px;
+		font-weight: 300;
+	}
+	.author:before {
+		.kulerfont;
+		content: "\e60e";
+		font-size: 14px;
+		margin-right: 3px;
+		color:@skin1;
+	}
+	.category:before {
+		.kulerfont;
+		content: "\e610";
+		font-size: 14px;
+		margin-right: 5px;
+		color:@skin1;
+	}
+}
+.comment-stats:before {
+	.kulerfont;
+	content: "\e612";
+	margin-right: 3px;
+	color:@skin1;
+}
+.article-extra-info time:before {
+	.kulerfont;
+	content: "\e60c";
+	font-size: 14px;
+	margin-right: 3px;
+	color:@skin1;
+}
+.comment-list .comment {
+	padding: 0;
+	margin: 0;
+}
+.author-name {
+	font-size: 18px;
+	font-weight: 600;
+}
+.article-header {
+	h2 {
+		margin-bottom: 10px;
+		text-transform: none;
+		font-size: 18px;
+		font-weight: 500;
+	}
+}
+.article-content p{
+	font-weight: 300;
+}
+.kbm-latest-comment ul,
+.kbm-latest-comment li {
+	margin: 0;
+}
+.kbm-latest-comment li {
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #EEEEEE;
+}
+.kbm-latest-comment li a {
+	color: #444;
+}
+.comment-container {
+	background-color: transparent;
+}
+#form-comment .validator input,
+#form-comment .validator img{
+	vertical-align: middle;
+}
+.comment-container{
+	padding: 0 !important;
+	background: none !important;
+}
+#form-comment{
+	td{
+		padding: 10px 10px 10px 0;
+	}
+}

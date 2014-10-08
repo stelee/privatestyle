@@ -1,0 +1,30 @@
+---------- Date: 2014-07-25 03:16:58 ~ IP : 118.71.12.51 ----------
+REQUEST URI : /start/1/admin/
+MOD DETAILS:
+   modFile   : /home/kladmin/public_html/demo.kulerthemes/start/1/vqmod/xml/kulerthemes_cp.xml
+   id        : KulerThemes
+   version   : 
+   vqmver    : 
+   author    : kulerthemes.com
+VQModObject::parseMods - Could not resolve path for [catalog/controller/common/ content_bottom.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/controller/common/ column_left.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/controller/common/ column_right.php] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2014-07-25 03:17:00 ~ IP : 66.249.67.196 ----------
+REQUEST URI : /start/1/index.php?route=product/category&amp;path=76_78&amp;sort=p.price&amp;order=ASC
+MOD DETAILS:
+   modFile   : /home/kladmin/public_html/demo.kulerthemes/start/1/vqmod/xml/vqmod_kuler.xml
+   id        : KulerThemes
+   version   : 
+   vqmver    : 
+   author    : kulerthemes.com
+
+File Name    : catalog/controller/module/kuler_cp.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $this->overrideResponse();
+
+----------------------------------------------------------------------
+
+

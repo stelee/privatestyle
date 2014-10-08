@@ -1,0 +1,102 @@
+@import (reference) "elements.less";
+@import (reference) "variables.less";
+@import (reference) "common.less";
+/*--------------------------------------------
+General
+----------------------------------------------*/
+.boxed{
+   #container{
+      max-width: 1250px;
+   }
+}
+.container{
+   max-width: 1200px;
+}
+/*fixed header*/
+.fix{
+   position: fixed !important;
+   z-index:@zindex-dropdown;
+   left: 0;
+   top: 0 !important;
+   width: 100%;
+   background-color: #fff;
+   margin: 0;
+   &#header{
+      padding-top: 15px;
+   }
+   .box-shadow(3px 3px 5px rgba(0, 0, 0, 0.1));
+   .mainmenu > li{
+      > a{
+         padding: 10px 0;
+      }
+   }
+   .navigation{
+      margin-top: 15px;
+   }
+}
+/*search*/
+.kuler-finder-result{
+   visibility: visible;
+   opacity: 1;
+   text-align: left;
+   background: #ffffff;
+   padding-top: 15px;
+   z-index: 9999 !important;
+   border: 1px solid #eeeeee;
+   .rounded(0);
+   .box-shadow(3px 3px 5px rgba(0, 0, 0, 0.1));
+	width: 400px !important;
+	left: 0 !important;
+   .name a{
+      padding: 0;
+   }
+   .description{
+      font-weight: 300;
+   }
+   li{
+      .clearfix;
+      margin-bottom: 15px;
+   }
+   .left{
+      width: auto;
+      padding-right: 0;
+   }
+   #load-more-container{
+      .clearfix;
+      width: 100%;
+      text-align: center;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border-top: 1px solid #EEEEEE;
+      text-transform: uppercase;
+      .ui-state-hover{
+         background: none !important;
+         border: none !important;
+      }
+   }
+}
+.ui-menu .ui-menu-item a{
+   padding: 0;
+}
+.ui-menu .ui-menu-item{
+   margin-bottom: 15px;
+}
+/*menu*/
+#header{
+   #menu{
+      display: block;
+   }
+}
+.kuler-slides .box-heading{
+   position: relative;
+   span{
+      padding-right: 10px;
+   }
+}
+/*--------------------------------------------
+Products List
+----------------------------------------------*/
+.kuler-tabs .box-heading li.ui-state-default,
+.kuler-tabs .category-list h2 li.ui-state-default{
+	display: inline-block;
+}

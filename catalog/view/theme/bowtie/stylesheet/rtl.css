@@ -1,0 +1,115 @@
+/*--------------------------------------------
+RTL Support
+----------------------------------------------*/
+#search {
+  right: auto;
+  left: 0;
+}
+.alert label {
+  right: auto;
+  left: 0;
+}
+ul.box-category > li > .toggle,
+#top-bar .social {
+  float: left;
+}
+.product-grid .details div,
+.product-info .details .wishlist,
+.product-info .details .compare,
+.product-list .wishlist,
+.product-list .compare,
+.product-list .quick-view {
+  width: 42px;
+}
+#search input {
+  background-position: 3% center !important;
+}
+.jcarousel-skin-opencart .jcarousel-prev,
+.skin6 .kuler-slides .jcarousel-prev {
+  left: 0;
+  right: auto;
+}
+.jcarousel-skin-opencart .jcarousel-next,
+.skin6 .kuler-slides .jcarousel-next {
+  right: auto;
+  left: 33px;
+}
+.carousel .box-heading,
+.carousel .category-list h2,
+.kuler-slides .box-heading,
+.kuler-slides .category-list h2 {
+  margin-right: 0;
+  margin-left: 80px;
+}
+#btn-mobile-toggle {
+  text-align: left;
+}
+#header #cart .wrapper,
+#top-bar #cart .wrapper {
+  right: auto;
+  left: 15px;
+  width: 290px;
+}
+#login-form form {
+  font-size: 14px;
+}
+.feature2 li:before {
+  float: right;
+  margin-right: 0;
+  margin-left: 10px;
+}
+.jcarousel-skin-opencart .jcarousel-direction-rtl .jcarousel-item-horizontal {
+  margin: 0;
+}
+.skin6 .box-heading,
+.skin6 .category-list h2 {
+  margin-left: 0;
+}
+@media only screen and (min-width: 1200px) {
+  #logo,
+  #top-bar .ship,
+  .product-list .right {
+    text-align: right;
+  }
+  #top-bar .extra,
+  .newsletter,
+  .payment {
+    text-align: left;
+  }
+  .mainmenu > li {
+    margin-right: 0;
+    margin-left: 40px;
+  }
+  .product-grid .details div,
+  .product-info .details .wishlist,
+  .product-info .details .compare {
+    vertical-align: top;
+  }
+  .product-list .wishlist,
+  .product-list .compare,
+  .product-list .quick-view {
+    float: left;
+  }
+  .product-list .cart,
+  .product-info .details .cart {
+    float: right;
+  }
+  .category-info .image {
+    float: right;
+    margin-left: 30px;
+    margin-right: 0;
+    border: 10px solid #ffffff;
+  }
+  .share {
+    clear: both;
+  }
+  .product-list .cart,
+  .product-info .details .cart {
+    float: left;
+  }
+  #header #cart .wrapper,
+  #top-bar #cart .wrapper {
+    width: 370px;
+  }
+}
+/*# sourceMappingURL=rtl.css.map */

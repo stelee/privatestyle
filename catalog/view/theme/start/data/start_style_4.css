@@ -1,0 +1,311 @@
+/* Layout */
+
+/* Custom Notification */
+
+#notification {
+	top: 80px;
+	z-index: 9999;
+	opacity: 0;
+	right: 20px;
+	width: 300px;
+	position: fixed;
+	visibility: hidden;
+	transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+}
+
+#notification.active {
+	top: 20px;
+	opacity: 1;
+	visibility: visible;
+}
+
+
+/* Scroll up */
+
+.scrollup {
+z-index: 2;
+position: fixed;
+right: 50px;
+background:#EC6467
+}
+
+
+/* Style Customization */
+
+  .style_1 .mainmenu > li:hover, {
+    border-color: #EC6467;
+  }
+  .style_1 .product-grid .name a:hover,
+  .style_1 .box-product .name a:hover,
+  .style_1 .product-filter .display a:hover,
+  .style_1 .product-filter .display span:hover,
+  .style_1 .product-filter .product-compare a:hover,
+  .style_1 #megamenu .mainmenu > li > div .item > a:hover {
+    color: #EC6467;
+  }
+  .style_1 .category-list a:hover,
+  .style_1 .button:hover,
+  .style_1 a.button:hover,
+  .style_1 #header .checkout a:hover,
+  .style_1 .cart-total + .buttons a:hover,
+  .style_1 .cart-total + .buttons a:hover,
+  .style_1 #header #cart .heading #cart-product-total,
+  .style_1 .scrollup{
+    background-color: #EC6467;
+  }
+  .style_1 .product-list > div:hover .wishlist a:hover,
+  .style_1 .product-list > div:hover .compare a:hover,
+  .style_1 .product-list > div:hover .quick-view a:hover,
+  .style_1 .product-info .details .wishlist:hover,
+  .style_1 .product-info .details .compare:hover,
+  .style_1 #megamenu .subcat li a:hover,
+  .style_1 .breadcrumb li a:hover,
+  {
+    color: #EC6467;
+  }
+  .style_2 #header #cart .heading #cart-product-total,
+  .style_2 .scrollup,
+  .style_2 .navigation{
+    background-color: #EC6467;
+  }
+  .style_2 #content .kbm-recent-article li a,
+  .style_2 .product-grid .name a,
+  .style_2 .box-product .name a{
+    color: #EC6467;
+  }
+  .style_3 .navigation .container,
+  .style_3 .button, a.button,
+  .style_3 #footer .info a,
+  .style_3 .newsletter button,
+  .style_3 .scrollup,
+  .style_3 #header #cart .heading #cart-product-total,
+  .style_3 .article .read-more{
+    background-color: #EC6467;
+  }
+  .style_3 #content .kbm-recent-article li a,
+  .style_3 .jcarousel-skin-opencart .jcarousel-prev:before,
+  .style_3 .jcarousel-skin-opencart .jcarousel-next:before,
+  .style_3 .kuler-tabs .box-heading li.ui-state-active a,
+  .style_3 h1, .style_3 h2, .style_3 h3, .style_3 h4, .style_3 h5, .style_3 h6,
+  .style_3 .product-list .name a,
+  .style_3 .box-heading,
+  .style_3 .product-list .price,
+  .style_3 .product-grid .name a,
+  .style_3 .box-product .name a,
+  .style_3 .product-grid .details .wishlist a:before,
+  .style_3 .product-grid .details .compare a:before,
+  .style_3 .product-filter .display span,
+  .style_3 .article-header h2 a,
+  .style_3 #column-left ul a,
+  .style_3 #column-right ul a  {
+    color: #EC6467;
+  }
+
+  .product-grid .details .cart,
+  .product-grid .details .quick-view a:hover,
+  .product-grid .details .cart:hover,
+  .product-grid .details .compare:hover,
+  .product-grid .details .wishlist:hover{
+    background-color: #EC6467;
+  }
+	.style_4 .mainmenu > li:hover, {
+	border-color: #EC6467;
+	}
+	.style_4 .product-grid .name a:hover,
+	.style_4 .box-product .name a:hover,
+	.style_4 .product-filter .display a:hover,
+	.style_4 .product-filter .display span:hover,
+	.style_4 .product-filter .product-compare a:hover,
+	.style_4 #megamenu .mainmenu > li > div .item > a:hover {
+	color: #EC6467;
+	}
+	.style_4 .category-list a:hover,
+	.style_4 .button:hover,
+	.style_4 a.button:hover,
+	.style_4 #header .checkout a:hover,
+	.style_4 .cart-total + .buttons a:hover,
+	.style_4 .cart-total + .buttons a:hover,
+	.style_4 #header #cart .heading #cart-product-total,
+	.style_4 .scrollup{
+	background-color: #EC6467;
+	}
+	.style_4 .product-list > div:hover .wishlist a:hover,
+	.style_4 .product-list > div:hover .compare a:hover,
+	.style_4 .product-list > div:hover .quick-view a:hover,
+	.style_4 .product-info .details .wishlist:hover,
+	.style_4 .product-info .details .compare:hover,
+	.style_4 #megamenu .subcat li a:hover,
+	.style_4 .breadcrumb li a:hover,
+	{
+	color: #EC6467;
+	}
+
+
+
+  body {
+    
+      font-family: "Varela Round";
+    
+    
+    
+    
+        background-color: #ababab;
+    
+    
+      background-image: url(http://demo.kulerthemes.com/start/1/catalog/view/theme/start/data/patterns/binding_dark_retina.png);
+    
+    
+      color: #333;
+    
+  }
+  .kuler-tabs,.kuler-slides,
+  #header .checkout a,
+  .cart-total + .buttons a{
+  
+    font-family: "Varela Round";
+  
+}
+
+
+
+h1,h2,h3,h4,h5,h6 {
+  
+    font-family: "Varela Round";
+  
+  
+  
+  
+}
+
+
+
+  #top-bar{
+  
+    background-color: #F2F2F2;
+  
+  }
+
+
+
+  #top-bar a{
+    
+      color: #999;
+    
+  }
+
+
+
+  #top-bar a:hover{
+    
+      color: #db2c2c;
+    
+  }
+
+
+
+  #top-bar{
+    
+      color: #999;
+    
+  }
+
+
+
+  #top-bar{
+    
+      border-color: #f2f2f2;
+    
+  }
+
+
+
+
+  #header{
+  
+    background-color: rgba(255, 255, 255, 1);
+  
+  }
+
+
+
+#footer,#powered,.social-newsletter{
+  
+    background-color: #222;
+  
+}
+
+
+
+  #footer h3,#powered h3{
+    
+      color: #ffffff;
+    
+  }
+
+
+
+  #footer a,#powered a{
+    
+      color: #666;
+    
+  }
+  #footer,#powered{
+    
+      color: #666;
+    
+  }
+
+
+
+  #footer a:hover,#powered a:hover{
+    
+      color: #fff;
+    
+  }
+  #footer .steps li:hover,
+  #footer .contact li:hover{
+    
+      color: #fff;
+    
+  }
+
+  .social a:hover:before,
+  .newsletter button:hover{
+    
+      background-color: #fff;
+    
+  }
+
+
+
+
+#menu {
+	
+		font-family: "Varela Round";
+	
+	
+	
+	
+}
+
+
+.mainmenu > li > a {
+	
+	color: #666;
+	
+	
+}
+
+
+.style_1 #header #cart #cart-total:after,
+.style_1 #header #search .button-search:before{
+  color: #666;
+}
+.style_4 #header #cart #cart-total:after,
+.style_4 #header #search .button-search:before{
+color: #666;
+}
+
+

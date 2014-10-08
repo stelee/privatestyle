@@ -1,0 +1,169 @@
+@import (reference) "elements";
+/*--------------------------------------------
+Skin 2
+----------------------------------------------*/
+.alert.skin_2{
+	.col-md-11,label{
+		background-color: #008589;
+	}
+	.container{
+		position: static;
+	}
+}
+@media @sm { //768px
+
+}
+@media @md { //1024px
+.skin2{
+	&.home {
+		#header {
+			background-color: transparent;
+			position: absolute;
+			z-index: 99;
+			width: 100%;
+			.box-shadow(none);
+		}
+		#search .button-search:before,
+		.mainmenu > li > a,
+		#cart .heading a {
+			color: #FFFFFF;
+		}
+		#cart.active .heading a {
+			color: #222;
+		}
+	}
+	#search{
+		position: absolute;
+		right: 206px;
+		top: 10px;
+	}
+}
+}
+@media @lg { //1200px
+	.top-banners.skin_2{
+		background-color: #111;
+		padding-bottom: 0;
+		.col-md-12{
+			background: none;
+			margin-bottom: 0;
+		}
+		h2{
+			color: #fff;
+			line-height: 1;
+		}
+		.blocks{
+			background-color: #222222;
+			padding: 90px 0;
+		}
+		.content{
+			background-color: #111111;
+			color: #777777;
+			padding: 30px 30px 10px;
+			min-height: 150px;
+			h2{
+				letter-spacing: -2px;
+				font-weight: 900;
+				span{
+					letter-spacing: 3px;
+					font-weight: 500;
+				}
+			}
+		}
+		a{
+			color: #FFFFFF;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 15px;
+		}
+		.row{
+			margin: 0 -5px;
+			.col-md-4{
+				padding: 0 5px;
+			}
+		}
+		.photo{
+			position: relative;
+			&:hover{
+				.info,.info2{
+					letter-spacing: normal;
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+			&:hover{
+				.icon{
+					opacity: 1;
+					visibility: visible;
+					top: 50%;
+				}
+			}
+		}
+		.info{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			.translate(-50%,-50%);
+			color: #FFFFFF;
+			font-size: 27px;
+			font-weight: 500;
+			width: 100%;
+			letter-spacing: 5px;
+			opacity: 0;
+			visibility: hidden;
+			.transi;
+			span{
+				font-size: 13px;
+				display: block;
+			}
+		}
+		.info2{
+			position: absolute;
+			top: 30%;
+			left: 50%;
+			.translate(-50%,-50%);
+			color: #FFFFFF;
+			font-size: 27px;
+			font-weight: 500;
+			width: 100%;
+			letter-spacing: 5px;
+			opacity: 0;
+			visibility: hidden;
+			line-height: 1;
+			.transi;
+			span{
+				font-size: 13px;
+				display: block;
+				font-weight: 600;
+			}
+		}
+		.icon{
+			position: absolute;
+			top: 70%;
+			left: 50%;
+			.translate(-50%,-50%);
+			opacity: 0;
+			visibility: hidden;
+			.transi;
+		}
+	}
+	.bottom-banners.skin_2{
+		background: url("../image/bg1.jpg") repeat-y;
+		background-size: cover;
+		padding: 100px 0;
+		h3{
+			color: #FFFFFF;
+		}
+		.col-md-3{
+			&:hover{
+				.icon{
+					background-color: #fff;
+					color: #222222;
+				}
+			}
+		}
+		.icon{
+			background-color: #008589;
+			color: #FFFFFF;
+		}
+	}
+}

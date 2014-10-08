@@ -1,0 +1,129 @@
+@import (reference) "elements.less";
+@import (reference) "variables.less";
+@import (reference) "common.less";
+.container{
+   max-width: 320px;
+}
+/*top bar*/
+#top-bar{
+   .ship,#welcome{
+      display: none;
+   }
+   .extra,.links{
+      text-align: center;
+      margin-bottom: 5px;
+   }
+}
+/*mobile*/
+body.mobile{
+   background-color: #333333;
+   .kuler-tabs {
+      .box-heading{
+         li,.collapse{
+            display: none;
+            &.ui-state-active{
+               display: inline-block;
+            }
+         }
+         .btn-tabs-toggle{
+            display: block;
+         }
+         &.expand{
+            li{
+               display: inline-block;
+               z-index: 9999;
+            }
+         }
+      }
+   }
+}
+@media only screen and (max-width: 991px) {
+   /*mega menu for mobile*/
+   .navigation {
+      margin-bottom: 15px;
+      background: none !important;
+   }
+
+   #btn-mobile-toggle {
+      cursor: pointer;
+      padding: 10px 15px;
+      position: relative;
+      background-color: #333;
+      display: block;
+      text-transform: uppercase;
+      color: #ffffff;
+      &:after {
+         .kuler;
+         content: "\e60d";
+         font-size: 22px;
+         position: absolute;
+         right: 15px;
+         top: 8px;
+         .transi;
+      }
+      &.expand:after {
+         .rotation(90deg);
+      }
+   }
+   #megamenu {
+      background-color: #333;
+      display: none;
+      padding: 15px 15px 0;
+      .dropdown-container {
+         display: none;
+         background-color: #fff;
+         padding: 15px;
+      }
+      .dropdown-container .container {
+         padding: 10px 0;
+      }
+      .mainmenu li:first-child {
+         display: none;
+         margin: 0;
+      }
+      li.item {
+         margin-bottom: 10px;
+         position: relative;
+         p{
+            color: #aaa;
+         }
+         >a {
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 10px;
+            display: inline-block;
+         }
+         .menu-category-image {
+            float: none;
+         }
+         .menu-category-title {
+            display: block;
+            color: #444;
+         }
+         .subcat {
+            margin: 0 !important;
+         }
+         .btn-expand-menu {
+            position: absolute;
+            right: 0;
+            &:before {
+               .kuler;
+               content: "\e602";
+               display: inline-block;
+               color: #ffffff;
+               .transi;
+            }
+         }
+         &.expand {
+            .btn-expand-menu:before {
+               .rotation(45deg);
+            }
+         }
+      }
+      .product{
+         .hover{
+            display: none;
+         }
+      }
+   }
+}
